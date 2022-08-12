@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face{font-family:Avenir book;src:url(../fonts/Avenir-Book.ttf)}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+header.header {
+    background: #fff;
+    padding:  0 130px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.limitlesspic {
+    position: relative;
+    z-index: 2;
+    img {
+        width: 100%;
+    }
+}
+
+.celebrating__topsect {
+    padding: 0 130px;
+
+    .yearsimg {
+        width: 97px;
+        display: block;
+        margin: -71px auto 44px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #2E2E2E;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 54px;
+        margin-bottom: 103px;
+    }
+}
+
+.subtitlesect {
+    color: #2E2E2E;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 39px;
+    position: relative;
+    text-align: center;
+
+    &::after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        height: 4px;
+        width: 90px;
+        background: linear-gradient(90deg, rgba(255, 98, 0, 0.6) 0%, rgba(38, 159, 163, 0.6) 100%);
+        border-radius: 34px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -14px;
+    }
+}
+
+.celebrating__videosect {
+    min-height: 445px;
+    background: url('../img/devisecbg.png') no-repeat top center;
+
+    .videowrapper {
+        overflow: hidden;
+        border-radius: 10px;
+        max-width: 640px;
+        margin: 0 auto;
+        transition: 1s;
+
+        video {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        &.fullw {
+            max-width: 100%;
+            border-radius: 0;
+        }
+    }
+}
+
+.defysect {
+    padding: 120px 130px 120px 110px;
+}
+
+.defydescr {
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 25px;
+        color: #2E2E2E;
+        font-family:Avenir book;
+    }
+
+    .defyexplore {
+        color: #D14200;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+            color: #ff5303;
+        }
+    }
+}
+
+.titleh2 {
+    text-align: center;
+    margin-bottom: 21px;
+    color: #2E2E2E;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.videosection {
+    padding: 20px 130px 0 130px;
+
+    .title {
+        text-align: center;
+        margin-bottom: 28px;
+        color: #2E2E2E;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+    }
+}
+
+.videosection__video {
+    max-width: 1062px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    video {
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+
+#playbtn {
+    background: url('../img/playbtn.png') no-repeat center / 100%;
+    width:74px;
+    height:74px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+footer.footer {
+    position: relative;
+}
+
+.footer__img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.footer__social {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 56px;
+    bottom: 20px;
+    z-index: 2;
+
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 4px;
+    }
+}
+
+p {
+    margin-top: 0;
+}
+
+
+
+@media(max-width:1600.8px) {
+    .celebrating__topsect .yearsimg {
+        margin: -59px auto 44px;
+    }
+}
+
+@media(max-width:1300.8px) {
+    .celebrating__topsect .yearsimg {
+        margin: -51px auto 44px;
+    }
+}
+
+@media(max-width:991.8px) {
+    header.header {
+        padding: 0 30px;
+        min-height: 90px;
+    }
+
+    .celebrating__topsect h1 {
+        font-size: 32px;
+        margin-bottom: 50px;
+        line-height: 160%;
+    }
+
+    .defysect {
+        padding: 60px 30px 60px 30px;
+    }
+
+    .titleh2 {
+        font-size: 28px;
+        line-height: 160%;
+    }
+
+    .subtitlesect {
+        font-size: 18px;
+    }
+
+    .videosection .title {
+        font-size: 24px;
+    }
+
+    .celebrating__videosect {
+        background: none;
+        min-height: initial;
+    }
+
+    .celebrating__topsect .yearsimg {
+        width: 70px;
+    }
+
+    .celebrating__topsect {
+        padding: 0 30px;
+    }
+
+    .celebrating__topsect .yearsimg {
+        margin: -40px auto 44px;
+    }
+
+    .videosection {
+        padding: 20px 30px 0 30px;
+    }
+
+    .videosection__video {
+        max-width: 600px;
+    }
+
+}
+
+@media(max-width:767.8px)  {
+    .celebrating__topsect .yearsimg {
+        width: 50px;
+    }
+
+    .celebrating__topsect h1 {
+        font-size: 26px;
+    }
+
+    .celebrating__videosect .videowrapper {
+        border-radius: 0;
+    }
+
+    .defysect {
+        padding: 40px 30px 40px 30px;
+    }
+
+    .videosection {
+        padding: 20px 30px 0 30px;
+    }
+
+    .celebrating__topsect .yearsimg {
+        margin: -32px auto 44px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .celebrating__topsect .yearsimg {
+        margin: -25px auto 30px;
+    }
+
+    .celebrating__topsect h1 br {
+        display: none;
+    }
+
+    .header > img {
+        max-width: 120px;
+    }
+
+    header.header {
+        min-height: 70px;
+    }
+
+    .celebrating__topsect h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .subtitlesect {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .subtitlesect::after {
+        height: 3px;
+        width: 70px;
+        bottom: -11px;
+    }
+
+    .defydescr p {
+        font-size: 16px;
+    }
+
+    .titleh2 {
+        margin-bottom: 15px;
+    }
+
+    .titleh2 {
+        font-size: 24px;
+    }
+
+    .videosection .title {
+        font-size: 21px;
+    }
+
+    footer.footer {
+        min-height: 200px;
+    }
+
+    .footer__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .footer__social {
+        right: 30px;
+        bottom: 15px;
+    }
+
+    .videosection {
+        padding: 20px 15px 0 15px;
+    }
+
+    .defysect {
+        padding: 40px 15px 40px 15px;
+    }
+
+    header.header,
+    .celebrating__topsect {
+        padding: 0 15px;
+    }
+
+}
+
+@media(max-width:420.8px) {
+    .celebrating__topsect .yearsimg {
+        margin: -20px auto 30px;
+    }
+}
